@@ -7,6 +7,7 @@ $ mkdir auto-test
 $ cd auto-test
 $ git clone https://github.com/tuanbui280888/hae-automation.git
 $ cd hae-automation
+$ java -jar -Dwebdriver.chrome.driver=./chromedriver.exe selenium-server-standalone-3.141.59.jar
 $ npm install
 $ npm test
 ```

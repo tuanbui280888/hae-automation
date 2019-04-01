@@ -36,17 +36,21 @@ describe('Calculator Test', function () {
         // Verify: The final result is calculated with multiplication first
         assert.equal($(page.Calculator.RESULT_BOX_LOCATOR).getValue(),17);
 
-        // Tap 5-1/2
-        object.Calculator.tapButton(5);
+        // Clear test
+        object.Calculator.tapButton('c');
+        object.Calculator.tapButton('ac');
+
+        // Tap 6-4/2
+        object.Calculator.tapButton(6);
         object.Calculator.tapButton('-');
-        object.Calculator.tapButton(1);
+        object.Calculator.tapButton(4);
         object.Calculator.tapButton('/');
         // Verify: The result of subtraction will not return here
-        assert.notEqual($(page.Calculator.RESULT_BOX_LOCATOR).getValue(),4);
+        assert.notEqual($(page.Calculator.RESULT_BOX_LOCATOR).getValue(),2);
         object.Calculator.tapButton(2);
         object.Calculator.tapButton('=');
         // Verify: The final result is calculated with division first
-        assert.equal($(page.Calculator.RESULT_BOX_LOCATOR).getValue(),2);
+        assert.equal($(page.Calculator.RESULT_BOX_LOCATOR).getValue(),4);
     });
     it('[CA-03] Verify the Clear button will clear the displays', function () {
         // Tap 5+3 and click C button
