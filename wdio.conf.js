@@ -10,7 +10,7 @@ exports.config = {
   // host: 'localhost',
   // port: 4444,
   // specs: [
-  //   './src/mobile-app/calculator/test/CalculatorTest.js'
+  //   './src/mobile-app/calculator/test/*.test.js'
   // ],
   // capabilities: [{
   //   deviceName: "'Tuấn's iPhone",
