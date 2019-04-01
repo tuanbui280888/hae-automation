@@ -22,7 +22,7 @@ $ npm test
 - src
      - common: folder contains common funcions/ultilities that can used in all project
      - mobile-app: folder contains all projects related to mobile-app
-     - web-app: folder contains all projects related to mobile-app
+     - web-app: folder contains all projects related to web-app
 - reports: folder contains the report of every test execution, group by project>date
 - wdio.conf.js: Config file WebdriverIO to execute the test
 
